@@ -5,10 +5,13 @@ module.exports.list =  function list(request, response) {
 return response.json(products);
 }
 module.exports.show =  function show(request, response) {
-return  response.json(products.find(product => product._id == request.params.id));
+    const id = request.params.id;
+    return  response.json(products.find(product => product._id == id));
 }
 module.exports.create =  function create(request, response) {
-return response.json({});
+    let newProduct = request.body;
+    products.push(newProduct);
+    response.json(newProduct);
 }
 module.exports.update =  function update(request, response) {
  return response.json({theId: request.params.id});

@@ -4,8 +4,9 @@ let {list,show,create,update,remove} = require( '../controllers/VehicleControlle
 
 
 router.get('/vehicles', list); //Whole array
-router.get('/vehicles/:id', show); // Single item
+router.get('/vehicle/:id', show); // Single item
 router.post('/vehicles', create);
-router.put('/vehicles/:id', update);
-router.delete('/vehicles/:id', remove);
+router.put('/vehicle/:id', update);
+router.delete('/vehicle/:id', remove);
 module.exports =  router;
+

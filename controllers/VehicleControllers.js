@@ -5,10 +5,13 @@ module.exports.list =  function list(request, response) {
 return response.json(vehicles);
 }
 module.exports.show =  function show(request, response) {
-return  response.json(vehicles.find(vehicle => vehicle._id == request.params.id));
+    const id = request.params.id;
+    return  response.json(vehicles.find(vehicle => vehicle._id == id));
 }
 module.exports.create =  function create(request, response) {
-return response.json({});
+    let newVehicle = request.body;
+    vehicles.push(newVehicle);
+    response.json(newVehicle);
 }
 module.exports.update =  function update(request, response) {
  return response.json({theId: request.params.id});

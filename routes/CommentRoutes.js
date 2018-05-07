@@ -4,8 +4,8 @@ let {list,show,create,update,remove} = require( '../controllers/CommentControlle
 
 
 router.get('/comments', list); //Whole array
-router.get('/comments/:id', show); // Single item
+router.get('/comment/:id', show); // Single item
 router.post('/comments', create);
-router.put('/comments/:id', update);
-router.delete('/comments/:id', remove);
+router.put('/comment/:id', update);
+router.delete('/comment/:id', remove);
 module.exports =  router;

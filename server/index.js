@@ -10,12 +10,13 @@ let ProductRoutes = require("../routes/ProductRoutes.js");
 let VehicleRoutes = require("../routes/VehicleRoutes.js");
 const app = express();
 
+app.use(express.static('public'));
+app.use(bodyParser.json());
 app.use(CommentRoutes);
 app.use(ContactRoutes);
 app.use(ProductRoutes);
 app.use(VehicleRoutes);
-app.use(express.static('public'));
-app.use(bodyParser.json());
+
 
 // app.get("/comments", function(req, res, next)
 // {
