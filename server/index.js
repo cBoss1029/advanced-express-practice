@@ -18,7 +18,6 @@ app.use(ProductRoutes);
 app.use(VehicleRoutes);
 
 
-
 // app.get("/comments", function(req, res, next)
 // {
 //     return res.json(comments);
