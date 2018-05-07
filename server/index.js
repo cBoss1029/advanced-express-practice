@@ -18,17 +18,6 @@ app.use(ProductRoutes);
 app.use(VehicleRoutes);
 
 
-// app.get("/comments", function(req, res, next)
-// {
-//     return res.json(comments);
-// });
-
-// app.post("/comments", function(req, res, next)
-// {
-//     let newComment = req.body;
-//     comments.push(newComment);
-//     res.json(newComment);
-// });
 
 app.listen(3001, (err) => {
     if (err) {
