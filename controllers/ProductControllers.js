@@ -1,18 +1,14 @@
-let comments = require("../server/comments");
-
+let products = require("../server/products")
 
 
 module.exports.list =  function list(request, response) {
-return response.json(comments);
+return response.json(products);
 }
 module.exports.show =  function show(request, response) {
-    const id = request.params.id;
-    return  response.json(comments.find(comment => comment._id == id));
+return  response.json(products.find(product => product._id == request.params.id));
 }
 module.exports.create =  function create(request, response) {
-    let newComment = request.body;
-    comments.push(newComment);
-    response.json(newComment);
+return response.json({});
 }
 module.exports.update =  function update(request, response) {
  return response.json({theId: request.params.id});
