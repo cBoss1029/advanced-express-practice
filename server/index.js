@@ -26,8 +26,11 @@ app.use(ProductRoutes);
 app.use(VehicleRoutes);
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> feff299a42cbf75499c8a4db48bf3579970e76c5
 app.listen(3001, (err) => {
     if (err) {
     return console.log("Error", err);
