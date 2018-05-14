@@ -26,8 +26,6 @@ app.use(ProductRoutes);
 app.use(VehicleRoutes);
 
 
-
-
 app.listen(3001, (err) => {
     if (err) {
     return console.log("Error", err);
