@@ -1,8 +1,5 @@
 let express = require("express");
-let comments = require("./comments");
-let products = require("./products");
-let vehicles = require("./vehicles");
-let contacts = require("./contacts");
+
 let bodyParser = require("body-parser");
 let CommentRoutes = require("../routes/CommentRoutes.js");
 let ContactRoutes = require("../routes/ContactRoutes.js");
